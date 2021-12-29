@@ -14,7 +14,7 @@ runs:
     - id: auth
       uses: google-github-actions/auth@v0
       with:
-        credentials_json: '${{ inputs.gcp-sa-creds-json }}'
+        credentials_json: ${{ inputs.gcp-sa-creds-json }}
     - name: Setup GCP SDK
       uses: google-github-actions/setup-gcloud@v0.3.0
     - name: Configure Docker Client
